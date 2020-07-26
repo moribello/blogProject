@@ -32,6 +32,18 @@ button:rollover{
     padding-left: 20px;
     text-shadow: 2px 2px 4px #aaaaaa;
 }
+#header img{
+    height: 60px;
+    margin-right: 15px;
+}
+#headerText{
+    display:flex;
+    flex-direction: column;
+
+}
+#headerText h1{
+    margin: 0px 0px -15px;
+}
 #content{
     display: flex;
     flex-direction: column;
@@ -76,7 +88,7 @@ button:rollover{
     font-family: Cinzel;
     font-size: .7em;
 }
-/* this stuff is for when the .card class is a grid */
+
 .cardHeader{
     grid-area: hd;
 }
@@ -98,7 +110,7 @@ button:rollover{
 .cardImage img{
     display: flex;
     align-content: flex-start;
-    width: 90px;
+    height: 50px;
     margin-top: 10px;
 }
 .cardFooter{
@@ -141,6 +153,9 @@ button:rollover{
       }
     #header{
         grid-area: hd;
+    }
+    #header img{
+        height: 115px;
     }
     #sidebar{
         display: flex;
