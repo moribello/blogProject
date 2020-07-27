@@ -88,7 +88,6 @@ button:rollover{
     font-family: Cinzel;
     font-size: .7em;
 }
-
 .cardHeader{
     grid-area: hd;
 }
@@ -100,7 +99,7 @@ button:rollover{
 }
 .cardContent{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     grid-area: ct;
 }
 .cardImage{
@@ -110,7 +109,7 @@ button:rollover{
 .cardImage img{
     display: flex;
     align-content: flex-start;
-    height: 50px;
+    height: 120px;
     margin-top: 10px;
 }
 .cardFooter{
@@ -118,21 +117,37 @@ button:rollover{
     flex-direction: row;
     justify-content: flex-end;
     grid-area: ft;
+    padding-top: 10px;
 }
-/* end of .card class as a grid */
-/* this stuff is for when the .card class is a flexbox, not a grid */
-.cardButton{
-    align-self: flex-end;
-    margin-bottom: 5px;
+.linkDiv{
+    display:flex;
+    background-color: #ffffff;
+    width: 120px;
+    height: 15px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+    border: 1px solid #810002;
+    border-radius: 25px;
+    color: #810002;
+    font-size: .8em;
 }
-.content{
-    padding-left: 20px;
+.linkDiv:hover{
+    background-color: #bbbbbb;
 }
-/* End of flexbox stuff */
-.sidebarItems{
-    padding: 5px 15px;
+.deadLink{
+    display:flex;
+    background-color: #ffffff;
+    width: 120px;
+    height: 15px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+    border: 1px solid #888888;
+    border-radius: 25px;
+    color: #888888;
+    font-size: .8em;
 }
-
 @media(max-width:767px){
     .sidebarItems{
         height: 20px;
