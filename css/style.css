@@ -4,21 +4,6 @@
 body{
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
-button{
-    display:flex;
-    background-color: #ffffff;
-    width: 120px;
-    height: 25px;
-    justify-content: center;
-    padding: 5px 5px;
-    border: 1px thin #810002;
-    border-radius: 25px;
-    color: #810002;
-    font-size: .8em;
-}
-button:rollover{
-    background-color: #cccccc;
-}
 #mainContainer{
     display: grid;
     grid-template-rows:60px 60px 1fr 30px;
@@ -43,6 +28,9 @@ button:rollover{
 }
 #headerText h1{
     margin: 0px 0px -15px;
+}
+#headerText p{
+    font-size: .8em;
 }
 #content{
     display: flex;
@@ -115,25 +103,32 @@ button:rollover{
 .cardFooter{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: flex-end;
     grid-area: ft;
-    padding-top: 10px;
+    padding: 10px 0px 15px;
 }
 .linkDiv{
     display:flex;
-    background-color: #ffffff;
-    width: 120px;
-    height: 15px;
     align-items: center;
     justify-content: center;
+    width: 120px;
+    height: 15px;
+    background-color: #ffffff;
+    color: #810002;
+    font-size: .9em;
     padding: 5px 5px;
     border: 1px solid #810002;
     border-radius: 25px;
-    color: #810002;
-    font-size: .8em;
+
 }
 .linkDiv:hover{
     background-color: #bbbbbb;
+}
+.linkDiv a:link{
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #810002;
 }
 .deadLink{
     display:flex;
@@ -146,13 +141,14 @@ button:rollover{
     border: 1px solid #888888;
     border-radius: 25px;
     color: #888888;
-    font-size: .8em;
+    font-size: .9em;
 }
+
 @media(max-width:767px){
     .sidebarItems{
         height: 20px;
         border-right: 1px solid #444444;
-        padding-right: 50px;
+        padding-right: 20px;
     }
 }
 
@@ -160,7 +156,7 @@ button:rollover{
     #mainContainer{
         display:grid;
         grid-template-columns: 140px 1fr;
-        grid-template-rows: 100px 1fr 30px;
+        grid-template-rows: 100px 1fr 40px;
         grid-template-areas: 
             "hd hd"
             "sd main"
@@ -172,6 +168,9 @@ button:rollover{
     #header img{
         height: 115px;
     }
+    #headerText p{
+    font-size: 1em;
+}
     #sidebar{
         display: flex;
         flex-direction: column;
@@ -187,4 +186,5 @@ button:rollover{
         padding: 15px 5px;
         border-bottom: 1px solid #444444;
     }
+    
 }
