@@ -19,18 +19,17 @@ a:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-family: Cinzel;
     padding-left: 20px;
+    font-family: Cinzel;
     text-shadow: 2px 2px 4px #aaaaaa;
 }
 #header img{
-    height: 60px;
     margin-right: 15px;
+    height: 60px;
 }
 #headerText{
     display:flex;
     flex-direction: column;
-
 }
 #headerText h1{
     margin: 0px 0px -15px;
@@ -49,8 +48,8 @@ a:hover{
     margin-top: 10px;
     padding-left: 20px;
     background-color: #810002;
-    color: #ffffff;
     font-size: .75em;
+    color: #ffffff;    
 }
 #sidebar{
     display: flex;
@@ -69,36 +68,36 @@ a:hover{
         "ct img"
         "ft ft";
     justify-content:space-between;
-    background-color: #eeeeee;
     margin: 5px;
     padding: 0px 10px 0px 10px;
+    background-color: #eeeeee;
 }
 .card h1{
-    font-family: Cinzel;
-    font-size: 1.2em;
     height: .4em;
+    font-size: 1.2em;    
+    font-family: Cinzel;
 }
 .card h2{
-    font-family: Cinzel;
     font-size: .7em;
+    font-family: Cinzel;
 }
 .card h3{
-    font-family: Cinzel;
     font-size: .5em;
+    font-family: Cinzel;  
 }
 .cardHeader{
     grid-area: hd;
 }
 .cardAdded{
+    grid-area: ca;
     display: flex;
     justify-content: flex-start;
-    grid-area: ca;
     padding-left: 15px;
 }
 .cardContent{
+    grid-area: ct;
     display: flex;
     flex-direction: column;
-    grid-area: ct;
 }
 .cardImage{
     grid-area: img;
@@ -107,30 +106,29 @@ a:hover{
 .cardImage img{
     display: flex;
     align-content: flex-start;
-    height: 120px;
     margin-top: 10px;
+    height: 120px;   
 }
 .cardFooter{
+    grid-area: ft;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    grid-area: ft;
     padding: 10px 0px 15px;
 }
 .linkDiv{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 15px;
-    background-color: #ffffff;
-    color: #810002;
-    font-size: .9em;
-    padding: 5px 5px;
     border: 1px solid #810002;
     border-radius: 25px;
-
+    width: 120px;
+    height: 15px;
+    padding: 5px 5px;
+    background-color: #ffffff;
+    font-size: .9em;
+    color: #810002;
 }
 .linkDiv:hover{
     background-color: #bbbbbb;
@@ -142,16 +140,16 @@ a:hover{
 }
 .deadLink{
     display:flex;
-    background-color: #ffffff;
-    width: 120px;
-    height: 15px;
     align-items: center;
     justify-content: center;
-    padding: 5px 5px;
     border: 1px solid #888888;
     border-radius: 25px;
-    color: #888888;
+    width: 120px;
+    height: 15px;
+    padding: 5px 5px;
+    background-color: #ffffff;
     font-size: .9em;
+    color: #888888;
 }
 .sidebarItems:hover{
     box-shadow: 1px 1px 3px 4px #cccccc inset;
@@ -159,8 +157,8 @@ a:hover{
 
 @media(max-width:767px){
     .sidebarItems{
-        height: 20px;
         border-right: 1px solid #444444;
+        height: 20px;
         padding-right: 20px;
     }
 }
@@ -194,10 +192,10 @@ a:hover{
         grid-area: ft;
     }
     .sidebarItems{
-        width: 110px;
         margin: 25px 0px 25px 0px;
-        padding: 15px 10px; 15px 5px;
         border-bottom: 1px solid #444444;
+        width: 110px;
+        padding: 15px 10px; 15px 5px;
     }
     
 }

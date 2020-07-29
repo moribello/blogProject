@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
 body{
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
     font-size: 14pt;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; 
 }
 a:link{
     text-decoration: none;
@@ -23,13 +23,13 @@ a:hover{
         "ft ft"
 }
 #header{
+    grid-area: hd;
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-family: Cinzel;
     padding-left: 20px;
+    font-family: Cinzel;
     text-shadow: 2px 2px 4px #aaaaaa;
-    grid-area: hd;
 }
 #headerText{
     display:flex;
@@ -38,23 +38,23 @@ a:hover{
 }
 #headerText h1{
     margin: 0px 0px -15px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 #headerText h2{
-    font-family: Cinzel;
     font-size: .7em;
+    font-family: Cinzel;
 }
 #headerText h3{
+    font-size: .5em;
     font-family: Cinzel;
-    fint-size: .5em;
 }
 #headerText p{
-    font-size: .8em;
+    font-size: .7em;
 }
 #mainImage{
+    grid-area: main;
     display: flex;
     flex-direction: row;
-    grid-area: main;
     background-image: url("../images/blogMain.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,23 +63,23 @@ a:hover{
     max-width:100%;
 }
 #images{
+    grid-area: imgs;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    grid-area: imgs;
 }
 #description{
+    grid-area: desc;
     display: flex;
     flex-direction: column;
-    grid-area: desc;
-    border: 1px solid #444444;
     overflow: auto;
+    border: 1px solid #444444;    
 }
 #footer{
+    grid-area: ft;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    grid-area: ft;
+    justify-content: center; 
 }
 .footerRow{
     display: flex;
@@ -90,12 +90,12 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items:center;
-    height: 100%;
     justify-content:space-around;
+    height: 100%;
 }
 .imagestrip img{
-    max-height: 55px;
     box-shadow: 1px 1px 5px 1px #000000;
+    max-height: 55px;
 }
 .blogPara{
     display: flex;
@@ -122,13 +122,13 @@ a:hover{
 .aboutTheAuthor{
     display: flex;
     flex-direction: column;
-    font-size: .7em;
     padding: 10px 0px;
+    font-size: .7em;
 }
 .aboutTheAuthor h1{
-    font-weight: bold;
-    font-size: .9em;
     margin: 0px;
+    font-size: .9em;
+    font-weight: bold;
 }
 .aboutTheAuthor p{
     margin: 2px 0px;
@@ -141,26 +141,25 @@ a:hover{
     height: 35px;
 }
 .socialMedia img{
-    max-height: 15px;
+    margin: 0px 25px;
     max-width: 15px;
+    max-height: 15px;
     width: auto;
-    height: auto;
-    margin: 0px 25px
+    height: auto;  
 }
 .linkDiv{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 110px;
-    height: 10px;
-    background-color: #ffffff;
-    color: #810002;
-    font-size: .8em;
-    padding: 5px 5px;
     margin: 0px 25px;
     border: 1px solid #810002;
     border-radius: 25px;
-
+    width: 110px;
+    height: 10px;
+    padding: 5px 5px;
+    background-color: #ffffff;
+    font-size: .8em;
+    color: #810002;
 }
 .linkDiv:hover{
     background-color: #bbbbbb;
@@ -172,19 +171,18 @@ a:hover{
 }
 .deadLink{
     display:flex;
-    background-color: #ffffff;
-    width: 110px;
-    height: 10px;
     align-items: center;
     justify-content: center;
-    padding: 5px 5px;
     margin: 0px 25px;
     border: 1px solid #888888;
     border-radius: 10px;
-    color: #888888;
+    width: 110px;
+    height: 10px;
+    padding: 5px 5px;
+    background-color: #ffffff;
     font-size: .8em;
+    color: #888888;
 }
-
 
 @media(min-width:768px){
     #mainContainer{
@@ -211,26 +209,26 @@ a:hover{
         grid-area: ft;
     }
     #images{
+        grid-area: imgs;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        grid-area: imgs;
+        justify-content: center;     
 }
     #description{
+        grid-area: desc;
         display: flex;
         flex-direction: column;
-        grid-area: desc;
     }
     .imagestrip{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items:flex-end;
-    width: 100%;
-    justify-content:space-around;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items:flex-end;
+        justify-content:space-around;
+        width: 100%;
 }
 .imagestrip img{
-    max-height: 130px;
     border: 1px thin #ffffff;
+    max-height: 130px;
     box-shadow: 2px 2px 5px 3px #444444;
 }
 .socialMedia p{
