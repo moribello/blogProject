@@ -4,6 +4,12 @@
 body{
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: #D9080B;
+}
 #mainContainer{
     display: grid;
     grid-template-rows:60px 60px 1fr 30px;
@@ -76,6 +82,10 @@ body{
     font-family: Cinzel;
     font-size: .7em;
 }
+.card h3{
+    font-family: Cinzel;
+    font-size: .5em;
+}
 .cardHeader{
     grid-area: hd;
 }
@@ -143,6 +153,9 @@ body{
     color: #888888;
     font-size: .9em;
 }
+.sidebarItems:hover{
+    box-shadow: 1px 1px 3px 4px #cccccc inset;
+}
 
 @media(max-width:767px){
     .sidebarItems{
@@ -183,7 +196,7 @@ body{
     .sidebarItems{
         width: 110px;
         margin: 25px 0px 25px 0px;
-        padding: 15px 5px;
+        padding: 15px 10px; 15px 5px;
         border-bottom: 1px solid #444444;
     }
     

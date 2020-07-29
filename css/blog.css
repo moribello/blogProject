@@ -5,11 +5,17 @@ body{
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
     font-size: 14pt;
 }
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: #D9080B;
+}
 #mainContainer{
     display: grid;
     grid-template-columns: 15% 1fr;
-    grid-template-rows: 50px 300px 200px 50px;
-    grid-gap: 10px;
+    grid-template-rows: 60px 260px 250px 180px;
+    grid-gap: 5px;
     grid-template-areas: 
         "hd hd"
         "imgs main"
@@ -24,7 +30,6 @@ body{
     padding-left: 20px;
     text-shadow: 2px 2px 4px #aaaaaa;
     grid-area: hd;
-
 }
 #headerText{
     display:flex;
@@ -33,6 +38,15 @@ body{
 }
 #headerText h1{
     margin: 0px 0px -15px;
+    font-size: 1.5em;
+}
+#headerText h2{
+    font-family: Cinzel;
+    font-size: .7em;
+}
+#headerText h3{
+    font-family: Cinzel;
+    fint-size: .5em;
 }
 #headerText p{
     font-size: .8em;
@@ -63,10 +77,14 @@ body{
 }
 #footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     grid-area: ft;
-    background-color: #8100002;
+}
+.footerRow{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
 }
 .imagestrip{
     display: flex;
@@ -76,8 +94,7 @@ body{
     justify-content:space-around;
 }
 .imagestrip img{
-    max-height: 65px;
-    margin-right: -25px;
+    max-height: 55px;
     box-shadow: 1px 1px 5px 1px #000000;
 }
 .blogPara{
@@ -102,15 +119,43 @@ body{
     width:auto;
     height: auto;
 }
+.aboutTheAuthor{
+    display: flex;
+    flex-direction: column;
+    font-size: .7em;
+    padding: 10px 0px;
+}
+.aboutTheAuthor h1{
+    font-weight: bold;
+    font-size: .9em;
+    margin: 0px;
+}
+.aboutTheAuthor p{
+    margin: 2px 0px;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+}
+.socialMedia img{
+    max-height: 15px;
+    max-width: 15px;
+    width: auto;
+    height: auto;
+    margin: 0px 25px
+}
 .linkDiv{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 15px;
+    width: 110px;
+    height: 10px;
     background-color: #ffffff;
     color: #810002;
-    font-size: .9em;
+    font-size: .8em;
     padding: 5px 5px;
     margin: 0px 25px;
     border: 1px solid #810002;
@@ -128,16 +173,16 @@ body{
 .deadLink{
     display:flex;
     background-color: #ffffff;
-    width: 120px;
-    height: 15px;
+    width: 110px;
+    height: 10px;
     align-items: center;
     justify-content: center;
     padding: 5px 5px;
     margin: 0px 25px;
     border: 1px solid #888888;
-    border-radius: 25px;
+    border-radius: 10px;
     color: #888888;
-    font-size: .9em;
+    font-size: .8em;
 }
 
 
@@ -145,7 +190,7 @@ body{
     #mainContainer{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 75px 300px 100px 200px 50px;
+        grid-template-rows: 75px 180px 100px 250px 140px;
         grid-template-areas: 
             "hd"
             "main"
@@ -166,15 +211,15 @@ body{
         grid-area: ft;
     }
     #images{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    grid-area: imgs;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        grid-area: imgs;
 }
     #description{
-    display: flex;
-    flex-direction: column;
-    grid-area: desc;
+        display: flex;
+        flex-direction: column;
+        grid-area: desc;
     }
     .imagestrip{
     display: flex;
@@ -188,4 +233,7 @@ body{
     border: 1px thin #ffffff;
     box-shadow: 2px 2px 5px 3px #444444;
 }
+.socialMedia p{
+    margin: 0px 0px;
+    }
 }
